@@ -32,5 +32,8 @@ class Tag
         public ?ExternalDocumentation $externalDocs = null,
         public array $extensions = []
     ) {
+        if ($externalDocs == null) {
+            $this->externalDocs = new ExternalDocumentation();
+        }
     }
 }

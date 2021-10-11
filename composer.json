@@ -31,6 +31,8 @@
         ]
     },
     "autoload": {
-        "OpenApi\\": "src\\OpenApi"
+        "psr-4": {
+            "OpenApi\\": "src\\OpenApi"
+        }
     }
 }

@@ -65,5 +65,11 @@ class Operation
         public bool $hidden = false,
         public bool $ignoreJsonView = false
     ) {
+        if ($requestBody == null) {
+            $this->requestBody = new RequestBody();
+        }
+        if ($externalDocs == null) {
+            $this->externalDocs = new ExternalDocumentation();
+        }
     }
 }

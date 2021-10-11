@@ -32,9 +32,12 @@ class Link
         public array $parameters = [],
         public string $description = "",
         public string $requestBody = "",
-        public Server $server = new Server(),
+        public ?Server $server = null,
         public array $extensions = [],
         public string $ref = ""
     ) {
+        if ($server == null) {
+            $this->server = new Server();
+        }
     }
 }
