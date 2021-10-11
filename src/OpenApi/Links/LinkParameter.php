@@ -1,0 +1,22 @@
+<?php
+
+namespace OpenApi\Links;
+
+use Attribute;
+
+/**
+ * Represents a parameter to pass to an operation as specified with operationId or identified via operationRef.
+ **/
+#[Attribute(0)]
+class LinkParameter
+{
+    /**
+     * @param string $name The name of this link parameter.
+     * @param string $expression A constant or an expression to be evaluated and passed to the linked operation.
+     */
+    public function __construct(
+        public string $name = "",
+        public string $expression = ""
+    ) {
+    }
+}

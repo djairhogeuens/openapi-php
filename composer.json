@@ -1,0 +1,36 @@
+{
+    "name": "djairhogeuens/openapi-php",
+    "version": "3.0.2-alpha",
+    "description": "PHP implementation of the OpenAPI Specification using PHP attributes",
+    "type": "library",
+    "homepage": "https://github.com/djairhogeuens/openapi-php",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Djairho Geuens",
+            "email": "djairhogeuens@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^4.1",
+        "phpstan/phpstan": "^0.12.93",
+        "friendsofphp/php-cs-fixer": "^3.0"
+    },
+    "scripts": {
+        "psalm": "psalm --no-diff",
+        "stan": "phpstan --memory-limit=1G",
+        "cs-check": "php-cs-fixer fix --dry-run",
+        "cs-fix": "php-cs-fixer fix",
+        "lint": [
+            "@psalm",
+            "@stan",
+            "@cs-check"
+        ]
+    },
+    "autoload": {
+        "OpenApi\\": "src\\OpenApi"
+    }
+}

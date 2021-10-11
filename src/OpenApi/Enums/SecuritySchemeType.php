@@ -1,0 +1,12 @@
+<?php
+
+namespace OpenApi\Enums;
+
+class SecuritySchemeType
+{
+    public const DEFAULT = "";
+    public const APIKEY = "apiKey";
+    public const HTTP = "http";
+    public const OPENIDCONNECT = "openIdConnect";
+    public const OAUTH2 = "oauth2";
+}
