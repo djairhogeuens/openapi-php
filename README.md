@@ -8,6 +8,6 @@ Currently, this implementation is compatible with OpenAPI 3.0.2 and requires PHP
 
 ## Usage
 
-See the `example` folder for an example on how to use the attributes in your project.
+Install the library using Composer: `composer install djairhogeuens/openapi-php`.
 
-> TO DO: publish the library on Packagist to allow installing it using Composer
+See the `example` folder for an example on how to use the attributes in your project.
