@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenApi\Media;
+namespace OpenApi\Attributes\Media;
 
 use Attribute;
-use OpenApi\Extensions\Extension;
+use OpenApi\Attributes\Extensions\Extension;
 
 /**
  * The annotation may be used to define a schema of type "array" for a set of elements of the OpenAPI spec, and/or to define additional

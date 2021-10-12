@@ -1,6 +1,6 @@
 <?php
 
-use OpenApi\Media\Schema;
+use OpenApi\Attributes\Media\Schema;
 
 class Address
 {

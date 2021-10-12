@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenApi\Media;
+namespace OpenApi\Attributes\Media;
 
 use Attribute;
-use OpenApi\Extensions\Extension;
-use OpenApi\Headers\Header;
+use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\Headers\Header;
 
 /**
  * The annotation may be used to add encoding details to the definition of a parameter, request or response content,

@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenApi\Servers;
+namespace OpenApi\Attributes\Servers;
 
 use Attribute;
-use OpenApi\Extensions\Extension;
+use OpenApi\Attributes\Extensions\Extension;
 
 /**
  * The annotation may be applied at class or method level, or in {@see Operation#$servers} to define servers for the

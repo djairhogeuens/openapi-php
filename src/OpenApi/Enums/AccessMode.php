@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenApi\Enums;
+namespace OpenApi\Attributes\Enums;
 
 class AccessMode
 {

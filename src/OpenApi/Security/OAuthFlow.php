@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenApi\Security;
+namespace OpenApi\Attributes\Security;
 
 use Attribute;
-use OpenApi\Extensions\Extension;
+use OpenApi\Attributes\Extensions\Extension;
 
 /**
  * Configuration details for a supported OAuth Flow.

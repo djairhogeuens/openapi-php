@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenApi\Headers;
+namespace OpenApi\Attributes\Headers;
 
 use Attribute;
-use OpenApi\Media\Schema;
+use OpenApi\Attributes\Media\Schema;
 
 /**
  * The annotation may be used to add one or more headers to the definition of a response or as attribute of content

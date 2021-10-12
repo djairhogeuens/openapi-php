@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenApi\Tags;
+namespace OpenApi\Attributes\Tags;
 
 use Attribute;
-use OpenApi\Extensions\Extension;
-use OpenApi\ExternalDocumentation;
+use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\ExternalDocumentation;
 
 /**
  * The annotation may be applied at class or method level, or in {@see Operation#$tags} to define tags for the

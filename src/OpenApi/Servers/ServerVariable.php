@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenApi\Servers;
+namespace OpenApi\Attributes\Servers;
 
 use Attribute;
-use OpenApi\Extensions\Extension;
+use OpenApi\Attributes\Extensions\Extension;
 
 /**
  * An object representing a Server Variable for server URL template substitution.

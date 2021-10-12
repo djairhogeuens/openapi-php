@@ -1,14 +1,14 @@
 <?php
 
-namespace OpenApi;
+namespace OpenApi\Attributes;
 
 use Attribute;
-use OpenApi\Extensions\Extension;
-use OpenApi\Parameters\RequestBody;
-use OpenApi\Responses\ApiResponse;
-use OpenApi\Security\SecurityRequirement;
-use OpenApi\Servers\Server;
-use OpenApi\Tags\Tag;
+use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\Parameters\RequestBody;
+use OpenApi\Attributes\Responses\ApiResponse;
+use OpenApi\Attributes\Security\SecurityRequirement;
+use OpenApi\Attributes\Servers\Server;
+use OpenApi\Attributes\Tags\Tag;
 
 /**
  * The annotation may be used to define a resource method as an OpenAPI Operation, and/or to define additional

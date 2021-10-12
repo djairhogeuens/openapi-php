@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenApi\Media;
+namespace OpenApi\Attributes\Media;
 
 use Attribute;
 

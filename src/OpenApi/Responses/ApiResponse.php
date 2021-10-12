@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenApi\Responses;
+namespace OpenApi\Attributes\Responses;
 
 use Attribute;
-use OpenApi\Extensions\Extension;
-use OpenApi\Headers\Header;
-use OpenApi\Links\Link;
-use OpenApi\Media\Content;
+use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\Headers\Header;
+use OpenApi\Attributes\Links\Link;
+use OpenApi\Attributes\Media\Content;
 
 /**
  * The annotation may be used at method level or as field of {@see Operation} to define one or more responses of the

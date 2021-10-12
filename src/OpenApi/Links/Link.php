@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenApi\Links;
+namespace OpenApi\Attributes\Links;
 
 use Attribute;
-use OpenApi\Extensions\Extension;
-use OpenApi\Servers\Server;
+use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\Servers\Server;
 
 /**
  * The annotation may be applied in {@see ApiResponse#$links} to add OpenAPI links to a response.

@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenApi\Security;
+namespace OpenApi\Attributes\Security;
 
 use Attribute;
-use OpenApi\Enums\SecuritySchemeIn;
-use OpenApi\Enums\SecuritySchemeType;
+use OpenApi\Attributes\Enums\SecuritySchemeIn;
+use OpenApi\Attributes\Enums\SecuritySchemeType;
 
 /**
  * The annotation may be used at class level (also on multiple classes) to add securitySchemes to spec

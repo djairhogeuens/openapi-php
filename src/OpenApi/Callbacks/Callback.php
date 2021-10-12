@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenApi\Callbacks;
+namespace OpenApi\Attributes\Callbacks;
 
 use Attribute;
-use OpenApi\Extensions\Extension;
-use OpenApi\Operation;
+use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\Operation;
 
 /**
  * The annotation may be used at method level to add one ore more callbacks to the operation definition.

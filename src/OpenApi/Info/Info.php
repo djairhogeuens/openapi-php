@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenApi\Info;
+namespace OpenApi\Attributes\Info;
 
 use Attribute;
-use OpenApi\Extensions\Extension;
+use OpenApi\Attributes\Extensions\Extension;
 
 /**
  * The annotation may be used in {@see OpenAPIDefinition#$info} to populate the Info section of the OpenAPI document.

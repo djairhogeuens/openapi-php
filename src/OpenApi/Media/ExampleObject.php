@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenApi\Media;
+namespace OpenApi\Attributes\Media;
 
 use Attribute;
-use OpenApi\Extensions\Extension;
+use OpenApi\Attributes\Extensions\Extension;
 
 /**
  * The annotation may be used to add one or more examples to the definition of a parameter, request or response content,

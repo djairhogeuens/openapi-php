@@ -1,13 +1,13 @@
 <?php
 
-namespace OpenApi;
+namespace OpenApi\Attributes;
 
 use Attribute;
-use OpenApi\Extensions\Extension;
-use OpenApi\Info\Info;
-use OpenApi\Security\SecurityRequirement;
-use OpenApi\Servers\Server;
-use OpenApi\Tags\Tag;
+use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\Info\Info;
+use OpenApi\Attributes\Security\SecurityRequirement;
+use OpenApi\Attributes\Servers\Server;
+use OpenApi\Attributes\Tags\Tag;
 
 /**
  * The annotation that may be used to populate OpenAPI Object fields info, tags, servers, security and externalDocs

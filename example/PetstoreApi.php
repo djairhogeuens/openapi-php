@@ -1,30 +1,30 @@
 <?php
 
-use OpenApi\Delete;
-use OpenApi\Enums\Explode;
-use OpenApi\Enums\ParameterIn;
-use OpenApi\Enums\SecuritySchemeType;
-use OpenApi\ExternalDocumentation;
-use OpenApi\Get;
-use OpenApi\Headers\Header;
-use OpenApi\Info\Contact;
-use OpenApi\Info\Info;
-use OpenApi\Info\License;
-use OpenApi\Media\Content;
-use OpenApi\Media\Schema;
-use OpenApi\Operation;
-use OpenApi\Parameter;
-use OpenApi\Parameters\RequestBody;
-use OpenApi\Post;
-use OpenApi\Put;
-use OpenApi\Responses\ApiResponse as ResponseBody;
-use OpenApi\Security\OAuthFlow;
-use OpenApi\Security\OAuthFlows;
-use OpenApi\Security\OAuthScope;
-use OpenApi\Security\SecurityRequirement;
-use OpenApi\Security\SecurityScheme;
-use OpenApi\Servers\Server;
-use OpenApi\Tags\Tag;
+use OpenApi\Attributes\Delete;
+use OpenApi\Attributes\Enums\Explode;
+use OpenApi\Attributes\Enums\ParameterIn;
+use OpenApi\Attributes\Enums\SecuritySchemeType;
+use OpenApi\Attributes\ExternalDocumentation;
+use OpenApi\Attributes\Get;
+use OpenApi\Attributes\Headers\Header;
+use OpenApi\Attributes\Info\Contact;
+use OpenApi\Attributes\Info\Info;
+use OpenApi\Attributes\Info\License;
+use OpenApi\Attributes\Media\Content;
+use OpenApi\Attributes\Media\Schema;
+use OpenApi\Attributes\Operation;
+use OpenApi\Attributes\Parameter;
+use OpenApi\Attributes\Parameters\RequestBody;
+use OpenApi\Attributes\Post;
+use OpenApi\Attributes\Put;
+use OpenApi\Attributes\Responses\ApiResponse as ResponseBody;
+use OpenApi\Attributes\Security\OAuthFlow;
+use OpenApi\Attributes\Security\OAuthFlows;
+use OpenApi\Attributes\Security\OAuthScope;
+use OpenApi\Attributes\Security\SecurityRequirement;
+use OpenApi\Attributes\Security\SecurityScheme;
+use OpenApi\Attributes\Servers\Server;
+use OpenApi\Attributes\Tags\Tag;
 
 #[Info(
     title: "Swagger Petstore - OpenAPI 3.0",

@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenApi\Security;
+namespace OpenApi\Attributes\Security;
 
 use Attribute;
 

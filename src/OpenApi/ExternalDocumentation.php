@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenApi;
+namespace OpenApi\Attributes;
 
 use Attribute;
-use OpenApi\Extensions\Extension;
+use OpenApi\Attributes\Extensions\Extension;
 
 /**
  * The annotation may be used at method level or as field of {@see Operation} to add a reference to an external

@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenApi\Parameters;
+namespace OpenApi\Attributes\Parameters;
 
 use Attribute;
-use OpenApi\Extensions\Extension;
-use OpenApi\Media\Content;
+use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\Media\Content;
 
 /**
  * The annotation may be used on a method parameter to define it as the Request Body of the operation, and/or to define

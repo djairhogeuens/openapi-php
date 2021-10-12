@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenApi;
+namespace OpenApi\Attributes;
 
 abstract class BaseMethod
 {

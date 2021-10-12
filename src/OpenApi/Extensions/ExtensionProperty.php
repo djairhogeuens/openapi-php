@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenApi\Extensions;
+namespace OpenApi\Attributes\Extensions;
 
 use Attribute;
 

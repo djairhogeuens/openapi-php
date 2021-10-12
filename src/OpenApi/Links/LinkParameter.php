@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenApi\Links;
+namespace OpenApi\Attributes\Links;
 
 use Attribute;
 

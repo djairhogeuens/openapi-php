@@ -1,16 +1,16 @@
 <?php
 
-namespace OpenApi;
+namespace OpenApi\Attributes;
 
 use Attribute;
-use OpenApi\Enums\Explode;
-use OpenApi\Enums\ParameterIn;
-use OpenApi\Enums\ParameterStyle;
-use OpenApi\Extensions\Extension;
-use OpenApi\Media\ArraySchema;
-use OpenApi\Media\Content;
-use OpenApi\Media\ExampleObject;
-use OpenApi\Media\Schema;
+use OpenApi\Attributes\Enums\Explode;
+use OpenApi\Attributes\Enums\ParameterIn;
+use OpenApi\Attributes\Enums\ParameterStyle;
+use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\Media\ArraySchema;
+use OpenApi\Attributes\Media\Content;
+use OpenApi\Attributes\Media\ExampleObject;
+use OpenApi\Attributes\Media\Schema;
 
 /**
  * The annotation may be used on a method parameter to define it as a parameter for the operation, and/or to define

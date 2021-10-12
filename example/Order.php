@@ -1,7 +1,7 @@
 <?php
 
 use DateTime;
-use OpenApi\Media\Schema;
+use OpenApi\Attributes\Media\Schema;
 
 class Order
 {

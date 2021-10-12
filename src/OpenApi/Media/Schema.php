@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenApi\Media;
+namespace OpenApi\Attributes\Media;
 
 use Attribute;
-use OpenApi\Enums\AccessMode;
-use OpenApi\Extensions\Extension;
-use OpenApi\ExternalDocumentation;
+use OpenApi\Attributes\Enums\AccessMode;
+use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\ExternalDocumentation;
 
 /**
  * The annotation may be used to define a Schema for a set of elements of the OpenAPI spec, and/or to define additional
