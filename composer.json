@@ -1,6 +1,6 @@
 {
     "name": "djairhogeuens/openapi-php",
-    "version": "1.0.0-alpha",
+    "version": "1.0.0-alpha2",
     "description": "PHP implementation of the OpenAPI Specification using PHP attributes",
     "type": "library",
     "homepage": "https://github.com/djairhogeuens/openapi-php",
@@ -33,6 +33,11 @@
     "autoload": {
         "psr-4": {
             "OpenApi\\Attributes\\": "src\\OpenApi\\Attributes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OpenApi\\Example\\": "example\\OpenApi\\Example"
         }
     }
 }
