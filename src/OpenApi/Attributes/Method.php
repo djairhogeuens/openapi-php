@@ -2,6 +2,6 @@
 
 namespace OpenApi\Attributes;
 
-abstract class BaseMethod
+abstract class Method
 {
 }

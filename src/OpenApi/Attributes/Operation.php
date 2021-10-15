@@ -32,8 +32,7 @@ use OpenApi\Attributes\Tags\Tag;
 class Operation
 {
     /**
-     * @param BaseMethod|null $method The HTTP method for this operation.
-     * @param string $path The path for this operation.
+     * @param Method|null $method The HTTP method for this operation.
      * @param Tag[] $tags Tags can be used for logical grouping of operations by resources or any other qualifier.
      * @param string $summary Provides a brief description of this operation. Should be 120 characters or less for proper visibility in Swagger-UI.
      * @param string $description A verbose description of the operation.
@@ -50,8 +49,7 @@ class Operation
      * @param bool $ignoreJsonView Ignores JsonView annotations while resolving operations and types.
      */
     public function __construct(
-        public ?BaseMethod $method = null,
-        public string $path = "",
+        public ?Method $method = null,
         public array $tags = [],
         public string $summary = "",
         public string $description = "",
