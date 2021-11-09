@@ -6,13 +6,8 @@ use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
 
 /**
- * The annotation may be used to define the content/media type  of a parameter, request or response, by defining it as
- * field {@see Parameter#$content}, {@see RequestBody#$content} or {@see ApiResponse#$content}.
- *
- * @see Schema
- * @see Parameter
- * @see ApiResponse
- * @see RequestBody
+ * The attribute may be used to define the content/media type  of a parameter, request or response, by defining it as
+ * field {@see \OpenApi\Attributes\Parameter::$content}, {@see \OpenApi\Attributes\Parameters\RequestBody::$content} or {@see \OpenApi\Attributes\Responses\ApiResponse::$content}.
  **/
 #[Attribute(Attribute::TARGET_CLASS)]
 class Content

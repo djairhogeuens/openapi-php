@@ -9,10 +9,8 @@ use OpenApi\Attributes\Links\Link;
 use OpenApi\Attributes\Media\Content;
 
 /**
- * The annotation may be used at method level or as field of {@see Operation} to define one or more responses of the
+ * The attribute may be used at method level or as field of {@see \OpenApi\Attributes\Operation} to define one or more responses of the
  * Operation.
- *
- * @see Operation
  **/
 #[Attribute(Attribute::TARGET_METHOD | Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]
 class ApiResponse

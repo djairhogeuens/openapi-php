@@ -14,6 +14,7 @@ use OpenApi\Attributes\Info\Info;
 use OpenApi\Attributes\Info\License;
 use OpenApi\Attributes\Media\Content;
 use OpenApi\Attributes\Media\Schema;
+use OpenApi\Attributes\OpenAPIDefinition;
 use OpenApi\Attributes\Operation;
 use OpenApi\Attributes\Parameter;
 use OpenApi\Attributes\Parameters\RequestBody;
@@ -29,39 +30,45 @@ use OpenApi\Attributes\Security\SecurityScheme;
 use OpenApi\Attributes\Servers\Server;
 use OpenApi\Attributes\Tags\Tag;
 
-#[Info(
-    title: "Swagger Petstore - OpenAPI 3.0",
-    description: "This is a sample Pet Store Server based on the OpenAPI 3.0 specification. You can find out more about
-Swagger at [http://swagger.io](http://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!
-You can now help us improve the API whether it's by making changes to the definition itself or to the code.
-That way, with time, we can improve the API in general, and expose some of the new features in OAS3.
-
-Some useful links:
-- [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)
-- [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
-    termsOfService: "http://swagger.io/terms/",
-    contact: new Contact(email: "apiteam@swagger.io"),
-    license: new License(name: "Apache 2.0", url: "http://www.apache.org/licenses/LICENSE-2.0.html"),
-    version: "1.0.6"
-)]
-#[ExternalDocumentation(
-    description: "Find out more about Swagger",
-    url: "http://swagger.io"
-)]
-#[Server(url: "/api/v3")]
-#[Tag(
-    name: "pet",
-    description: "Everything about your Pets",
-    externalDocs: new ExternalDocumentation(description: "Find out more", url: "http://swagger.io")
-)]
-#[Tag(
-    name: "store",
-    description: "Operations about user"
-)]
-#[Tag(
-    name: "user",
-    description: "Access to Petstore orders",
-    externalDocs: new ExternalDocumentation(description: "Find out more about our store", url: "http://swagger.io")
+#[OpenAPIDefinition(
+    info: new Info(
+        title: "Swagger Petstore - OpenAPI 3.0",
+        description: "This is a sample Pet Store Server based on the OpenAPI 3.0 specification. You can find out more about
+    Swagger at [http://swagger.io](http://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!
+    You can now help us improve the API whether it's by making changes to the definition itself or to the code.
+    That way, with time, we can improve the API in general, and expose some of the new features in OAS3.
+    
+    Some useful links:
+    - [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)
+    - [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
+        termsOfService: "http://swagger.io/terms/",
+        contact: new Contact(email: "apiteam@swagger.io"),
+        license: new License(name: "Apache 2.0", url: "http://www.apache.org/licenses/LICENSE-2.0.html"),
+        version: "1.0.6"
+    ),
+    tags: [
+        new Tag(
+            name: "pet",
+            description: "Everything about your Pets",
+            externalDocs: new ExternalDocumentation(description: "Find out more", url: "http://swagger.io")
+        ),
+        new Tag(
+            name: "store",
+            description: "Operations about user"
+        ),
+        new Tag(
+            name: "user",
+            description: "Access to Petstore orders",
+            externalDocs: new ExternalDocumentation(description: "Find out more about our store", url: "http://swagger.io")
+        )
+    ],
+    servers: [
+        new Server(url: "/api/v3")
+    ],
+    externalDocs: new ExternalDocumentation(
+        description: "Find out more about Swagger",
+        url: "http://swagger.io"
+    )
 )]
 #[SecurityScheme(
     type: SecuritySchemeType::OAUTH2,
@@ -80,8 +87,7 @@ interface PetstoreApi
 {
     #[Put]
     #[Path("/pet")]
-    #[Operation(summary: "Update an existing pet", description: "Update an existing pet by Id")]
-    #[Tag(name: "pet")]
+    #[Operation(summary: "Update an existing pet", description: "Update an existing pet by Id", tags: ["pet"])]
     #[ResponseBody(description: "Successful operation", responseCode: "200", content: [new Content(mediaType: "application/xml"), new Content(mediaType: "application/json")])]
     #[ResponseBody(description: "Invalid ID supplied", responseCode: "400")]
     #[ResponseBody(description: "Pet not found", responseCode: "404")]
@@ -94,8 +100,7 @@ interface PetstoreApi
 
     #[Post]
     #[Path("/pet")]
-    #[Operation(summary: "Add a new pet to the store", description: "Add a new pet to the store")]
-    #[Tag(name: "pet")]
+    #[Operation(summary: "Add a new pet to the store", description: "Add a new pet to the store", tags: ["pet"])]
     #[ResponseBody(description: "Successful operation", responseCode: "200", content: [new Content(mediaType: "application/xml"), new Content(mediaType: "application/json")])]
     #[ResponseBody(description: "Validation exception", responseCode: "405")]
     #[SecurityRequirement(name: "petstore_auth", scopes: ["write:pets", "read:pets"])]
@@ -109,8 +114,7 @@ interface PetstoreApi
      */
     #[Get]
     #[Path("/pet/findByStatus")]
-    #[Operation(summary: "Finds Pets by status", description: "Multiple status values can be provided with comma separated strings")]
-    #[Tag(name: "pet")]
+    #[Operation(summary: "Finds Pets by status", description: "Multiple status values can be provided with comma separated strings", tags: ["pet"])]
     #[ResponseBody(description: "successful operation", responseCode: "200", content: [new Content(mediaType: "application/xml"), new Content(mediaType: "application/json")])]
     #[ResponseBody(description: "Invalid status value", responseCode: "400")]
     #[SecurityRequirement(name: "petstore_auth", scopes: ["write:pets", "read:pets"])]
@@ -125,8 +129,7 @@ interface PetstoreApi
      */
     #[Get]
     #[Path("/pet/findByTags")]
-    #[Operation(summary: "Finds Pets by tags", description: "Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.")]
-    #[Tag(name: "pet")]
+    #[Operation(summary: "Finds Pets by tags", description: "Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.", tags: ["pet"])]
     #[ResponseBody(description: "successful operation", responseCode: "200", content: [new Content(mediaType: "application/xml"), new Content(mediaType: "application/json")])]
     #[ResponseBody(description: "Invalid tag value", responseCode: "400")]
     #[SecurityRequirement(name: "petstore_auth", scopes: ["write:pets", "read:pets"])]
@@ -137,8 +140,7 @@ interface PetstoreApi
 
     #[Get]
     #[Path("/pet/{petId}")]
-    #[Operation(summary: "Find pet by ID", description: "Returns a single pet")]
-    #[Tag(name: "pet")]
+    #[Operation(summary: "Find pet by ID", description: "Returns a single pet", tags: ["pet"])]
     #[ResponseBody(description: "successful operation", responseCode: "200", content: [new Content(mediaType: "application/xml"), new Content(mediaType: "application/json")])]
     #[ResponseBody(description: "Invalid ID supplied", responseCode: "400")]
     #[ResponseBody(description: "Pet not found", responseCode: "404")]
@@ -151,8 +153,7 @@ interface PetstoreApi
 
     #[Post]
     #[Path("/pet/{petId}")]
-    #[Operation(summary: "Updates a pet in the store with form data")]
-    #[Tag(name: "pet")]
+    #[Operation(summary: "Updates a pet in the store with form data", tags: ["pet"])]
     #[ResponseBody(description: "Invalid input", responseCode: "405")]
     #[SecurityRequirement(name: "petstore_auth", scopes: ["write:pets", "read:pets"])]
     public function updatePetWithForm(
@@ -166,8 +167,7 @@ interface PetstoreApi
 
     #[Delete]
     #[Path("/pet/{petId}")]
-    #[Operation(summary: "Deletes a pet")]
-    #[Tag(name: "pet")]
+    #[Operation(summary: "Deletes a pet", tags: ["pet"])]
     #[ResponseBody(description: "Invalid pet value", responseCode: "400")]
     #[SecurityRequirement(name: "petstore_auth", scopes: ["write:pets", "read:pets"])]
     public function deletePet(
@@ -179,8 +179,7 @@ interface PetstoreApi
 
     #[Post]
     #[Path("/pet/{petId}/uploadImage")]
-    #[Operation(summary: "uploads an image")]
-    #[Tag(name: "pet")]
+    #[Operation(summary: "uploads an image", tags: ["pet"])]
     #[ResponseBody(description: "successful operation", responseCode: "200", content: [new Content(mediaType: "application/json")])]
     #[SecurityRequirement(name: "petstore_auth", scopes: ["write:pets", "read:pets"])]
     public function uploadFile(
@@ -197,16 +196,14 @@ interface PetstoreApi
      */
     #[Get]
     #[Path("/store/inventory")]
-    #[Operation(summary: "Returns pet inventories by status", description: "Returns a map of status codes to quantities")]
-    #[Tag(name: "store")]
+    #[Operation(summary: "Returns pet inventories by status", description: "Returns a map of status codes to quantities", tags: ["store"])]
     #[ResponseBody(description: "successful operation", responseCode: "200", content: [new Content(mediaType: "application/json")])]
     #[SecurityRequirement(name: "api_key")]
     public function getInventory(): array;
 
     #[Post]
     #[Path("/store/order")]
-    #[Operation(summary: "Place an order for a pet", description: "Place a new order in the store")]
-    #[Tag(name: "store")]
+    #[Operation(summary: "Place an order for a pet", description: "Place a new order in the store", tags: ["store"])]
     #[ResponseBody(description: "successful operation", responseCode: "200", content: [new Content(mediaType: "application/json")])]
     #[ResponseBody(description: "Invalid input", responseCode: "405")]
     #[SecurityRequirement(name: "petstore_auth", scopes: ["write:pets", "read:pets"])]
@@ -217,8 +214,7 @@ interface PetstoreApi
 
     #[Get]
     #[Path("/store/order/{orderId}")]
-    #[Operation(summary: "Find purchase order by ID", description: "For valid response try integer IDs with value <= 5 or > 10. Other values will generated exceptions")]
-    #[Tag(name: "store")]
+    #[Operation(summary: "Find purchase order by ID", description: "For valid response try integer IDs with value <= 5 or > 10. Other values will generated exceptions", tags: ["store"])]
     #[ResponseBody(description: "successful operation", responseCode: "200", content: [new Content(mediaType: "application/xml"), new Content(mediaType: "application/json")])]
     #[ResponseBody(description: "Invalid ID supplied", responseCode: "400")]
     #[ResponseBody(description: "Order not found", responseCode: "404")]
@@ -229,8 +225,7 @@ interface PetstoreApi
 
     #[Delete]
     #[Path("/store/order/{orderId}")]
-    #[Operation(summary: "Delete purchase order by ID", description: "For valid response try integer IDs with value < 1000. Anything above 1000 or nonintegers will generate API errors")]
-    #[Tag(name: "store")]
+    #[Operation(summary: "Delete purchase order by ID", description: "For valid response try integer IDs with value < 1000. Anything above 1000 or nonintegers will generate API errors", tags: ["store"])]
     #[ResponseBody(description: "Invalid ID supplied", responseCode: "400")]
     #[ResponseBody(description: "Order not found", responseCode: "404")]
     public function deleteOrder(
@@ -240,8 +235,7 @@ interface PetstoreApi
 
     #[Post]
     #[Path("/user")]
-    #[Operation(summary: "Create user", description: "This can only be done by the logged in user.")]
-    #[Tag(name: "user")]
+    #[Operation(summary: "Create user", description: "This can only be done by the logged in user.", tags: ["user"])]
     #[ResponseBody(description: "successful operation", content: [new Content(mediaType: "application/json"), new Content(mediaType: "application/xml")])]
     public function createUser(
         #[RequestBody(description: "Created user object", content: [new Content(mediaType: "application/json"), new Content(mediaType: "application/xml"), new Content(mediaType: "application/x-www-form-urlencoded")])]
@@ -253,8 +247,7 @@ interface PetstoreApi
      */
     #[Post]
     #[Path("/user/createWithList")]
-    #[Operation(summary: "Creates list of users with given input array", description: "Creates list of users with given input array")]
-    #[Tag(name: "user")]
+    #[Operation(summary: "Creates list of users with given input array", description: "Creates list of users with given input array", tags: ["user"])]
     #[ResponseBody(description: "Successful operation", responseCode: "200", content: [new Content(mediaType: "application/json"), new Content(mediaType: "application/xml")])]
     #[ResponseBody(description: "successful operation")]
     public function createUsersWithListInput(
@@ -264,8 +257,7 @@ interface PetstoreApi
 
     #[Get]
     #[Path("/user/login")]
-    #[Operation(summary: "Logs user into the system")]
-    #[Tag(name: "user")]
+    #[Operation(summary: "Logs user into the system", tags: ["user"])]
     #[ResponseBody(description: "successful operation", responseCode: "200", headers: [new Header(name: "X-Rate-Limit", description: "calls per hour allowed by the user", schema: new Schema(type: "integer", format: "int32")), new Header(name: "X-Expires-After", description: "date in UTC when token expires", schema: new Schema(type: "string", format: "date-time"))], content: [new Content(mediaType: "application/xml"), new Content(mediaType: "application/json")])]
     #[ResponseBody(description: "Invalid username/password supplied", responseCode: "400")]
     public function loginUser(
@@ -277,15 +269,13 @@ interface PetstoreApi
 
     #[Get]
     #[Path("/user/logout")]
-    #[Operation(summary: "Logs out current logged in user session")]
-    #[Tag(name: "user")]
+    #[Operation(summary: "Logs out current logged in user session", tags: ["user"])]
     #[ResponseBody(description: "successful operation")]
     public function logoutUser(): string;
 
     #[Get]
     #[Path("/user/{username}")]
-    #[Operation(summary: "Get user by user name")]
-    #[Tag(name: "user")]
+    #[Operation(summary: "Get user by user name", tags: ["user"])]
     #[ResponseBody(description: "successful operation", responseCode: "200", content: [new Content(mediaType: "application/xml"), new Content(mediaType: "application/json")])]
     #[ResponseBody(description: "Invalid username supplied", responseCode: "400")]
     #[ResponseBody(description: "User not found", responseCode: "404")]
@@ -296,8 +286,7 @@ interface PetstoreApi
 
     #[Post]
     #[Path("/user/{username}")]
-    #[Operation(summary: "Update user", description: "This can only be done by the logged in user.")]
-    #[Tag(name: "user")]
+    #[Operation(summary: "Update user", description: "This can only be done by the logged in user.", tags: ["user"])]
     #[ResponseBody(description: "successful operation", content: [new Content(mediaType: "application/json"), new Content(mediaType: "application/xml")])]
     public function updateUser(
         #[Parameter(in: ParameterIn::PATH, description: "name that need to be deleted", required: true)]
@@ -308,8 +297,7 @@ interface PetstoreApi
 
     #[Delete]
     #[Path("/user/{username}")]
-    #[Operation(summary: "Delete user", description: "This can only be done by the logged in user.")]
-    #[Tag(name: "user")]
+    #[Operation(summary: "Delete user", description: "This can only be done by the logged in user.", tags: ["user"])]
     #[ResponseBody(description: "Invalid username supplied", responseCode: "400")]
     #[ResponseBody(description: "User not found", responseCode: "404")]
     public function deleteUser(

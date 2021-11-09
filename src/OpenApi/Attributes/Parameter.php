@@ -13,15 +13,11 @@ use OpenApi\Attributes\Media\ExampleObject;
 use OpenApi\Attributes\Media\Schema;
 
 /**
- * The annotation may be used on a method parameter to define it as a parameter for the operation, and/or to define
- * additional properties for the Parameter. It can also be used independently in {@see Operation#$parameters} or at
+ * The attribute may be used on a method parameter to define it as a parameter for the operation, and/or to define
+ * additional properties for the Parameter. It can also be used independently in {@see Operation::$parameters} or at
  * method level to add a parameter to the operation, even if not bound to any method parameter.
  *
- * <p>For method parameters bound to the request body, see {@see RequestBody}</p>
- *
- * @see RequestBody
- * @see Operation
- * @see Schema
+ * For method parameters bound to the request body, see {@see Parameters\RequestBody}
  **/
 #[Attribute(Attribute::TARGET_PARAMETER | Attribute::TARGET_METHOD | Attribute::TARGET_PROPERTY | Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]
 class Parameter

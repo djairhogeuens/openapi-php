@@ -6,9 +6,7 @@ use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
 
 /**
- * The annotation may be used in {@see OpenAPIDefinition#$info} to populate the Info section of the OpenAPI document.
- *
- * @see OpenAPIDefinition
+ * The attribute may be used in {@see OpenAPIDefinition::$info} to populate the Info section of the OpenAPI document.
  **/
 #[Attribute(Attribute::TARGET_CLASS)]
 class Info

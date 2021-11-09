@@ -6,10 +6,7 @@ use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
 
 /**
- * The annotation may be used in {@see Info#$license} to define a license for the OpenAPI spec.
- *
- * @see OpenAPIDefinition
- * @see Info
+ * The attribute may be used in {@see Info::$license} to define a license for the OpenAPI spec.
  **/
 #[Attribute(0)]
 class License

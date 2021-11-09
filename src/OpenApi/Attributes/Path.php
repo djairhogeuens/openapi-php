@@ -4,7 +4,7 @@ namespace OpenApi\Attributes;
 
 use Attribute;
 
-#[Attribute(Attribute::TARGET_METHOD)]
+#[Attribute(Attribute::TARGET_CLASS | Attribute::TARGET_METHOD)]
 class Path
 {
     public function __construct(

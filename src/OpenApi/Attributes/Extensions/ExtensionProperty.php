@@ -6,8 +6,6 @@ use Attribute;
 
 /**
  * A name/value property within a OpenApi extension
- *
- * @see Extension
  */
 #[Attribute(Attribute::TARGET_CLASS)]
 class ExtensionProperty

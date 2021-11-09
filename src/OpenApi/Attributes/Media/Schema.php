@@ -8,20 +8,18 @@ use OpenApi\Attributes\Extensions\Extension;
 use OpenApi\Attributes\ExternalDocumentation;
 
 /**
- * The annotation may be used to define a Schema for a set of elements of the OpenAPI spec, and/or to define additional
+ * The attribute may be used to define a Schema for a set of elements of the OpenAPI spec, and/or to define additional
  * properties for the schema. It is applicable e.g. to parameters, schema classes (aka "models"), properties of such
  * models, request and response content, header.
  *
- * <p>The annotation {@see ArraySchema} shall be used for array elements; {@see ArraySchema} and {@see Schema} cannot
- * coexist</p>
- *
- * @see ArraySchema
+ * The attribute {@see ArraySchema} shall be used for array elements; {@see ArraySchema} and {@see Schema} cannot
+ * coexist
  **/
 #[Attribute(Attribute::TARGET_PROPERTY | Attribute::TARGET_METHOD | Attribute::TARGET_CLASS)]
 class Schema
 {
     /**
-     * @param class-string|null $implementation Provides a PHP class as implementation for this schema. When provided, additional information in the Schema annotation (except for type information) will augment the PHP class after introspection.
+     * @param class-string|null $implementation Provides a PHP class as implementation for this schema. When provided, additional information in the Schema attribute (except for type information) will augment the PHP class after introspection.
      * @param class-string|null $not Provides a PHP class to be used to disallow matching properties.
      * @param class-string[] $oneOf Provides an array of PHP class implementations which can be used to describe multiple acceptable schemas. If more than one match the derived schemas, a validation error will occur.
      * @param class-string[] $anyOf Provides an array of PHP class implementations which can be used to describe multiple acceptable schemas. If any match, the schema will be considered valid.
@@ -45,9 +43,9 @@ class Schema
      * @param string $ref References a schema definition in an external OpenAPI document.
      * @param bool $nullable If true, designates a value as possibly null.
      * @param string $accessMode Allows to specify the access mode (AccessMode.READ_ONLY, READ_WRITE)
-     * AccessMode.READ_ONLY: value will not be written to during a request but may be returned during a response.
-     * AccessMode.WRITE_ONLY: value will only be written to during a request but not returned during a response.
-     * AccessMode.READ_WRITE: value will be written to during a request and returned during a response.
+     * AccessMode::READ_ONLY: value will not be written to during a request but may be returned during a response.
+     * AccessMode::WRITE_ONLY: value will only be written to during a request but not returned during a response.
+     * AccessMode::READ_WRITE: value will be written to during a request and returned during a response.
      * @param string $example Provides an example of the schema. When associated with a specific media type, the example string shall be parsed by the consumer to be treated as an object or an array.
      * @param ExternalDocumentation|null $externalDocs Additional external documentation for this schema.
      * @param bool $deprecated Specifies that a schema is deprecated and should be transitioned out of usage.

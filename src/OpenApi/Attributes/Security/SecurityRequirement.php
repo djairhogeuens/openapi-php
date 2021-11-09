@@ -5,12 +5,9 @@ namespace OpenApi\Attributes\Security;
 use Attribute;
 
 /**
- * The annotation may be applied at class or method level, or in {@see Operation#$security} to define security requirements for the
+ * The attribute may be applied at class or method level, or in {@see \OpenApi\Attributes\Operation::$security} to define security requirements for the
  * single operation (when applied at method level) or for all operations of a class (when applied at class level).
- * <p>It can also be used in {@see OpenAPIDefinition#$security} to define spec level security.</p>
- *
- * @see OpenAPIDefinition
- * @see Operation
+ * It can also be used in {@see \OpenApi\Attributes\OpenAPIDefinition::$security} to define spec level security.
  **/
 #[Attribute(Attribute::TARGET_METHOD | Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]
 class SecurityRequirement

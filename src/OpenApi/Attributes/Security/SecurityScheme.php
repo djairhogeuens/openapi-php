@@ -7,7 +7,7 @@ use OpenApi\Attributes\Enums\SecuritySchemeIn;
 use OpenApi\Attributes\Enums\SecuritySchemeType;
 
 /**
- * The annotation may be used at class level (also on multiple classes) to add securitySchemes to spec
+ * The attribute may be used at class level (also on multiple classes) to add securitySchemes to spec
  * components section.
  **/
 #[Attribute(Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]

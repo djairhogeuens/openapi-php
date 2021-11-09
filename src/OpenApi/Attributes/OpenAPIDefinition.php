@@ -10,7 +10,7 @@ use OpenApi\Attributes\Servers\Server;
 use OpenApi\Attributes\Tags\Tag;
 
 /**
- * The annotation that may be used to populate OpenAPI Object fields info, tags, servers, security and externalDocs
+ * The attribute that may be used to populate OpenAPI Object fields info, tags, servers, security and externalDocs.
  * If more than one class is annotated with {@see OpenAPIDefinition}, with the same fields defined, behaviour is inconsistent.
  */
 #[Attribute(Attribute::TARGET_CLASS)]

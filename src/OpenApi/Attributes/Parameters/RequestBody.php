@@ -7,11 +7,8 @@ use OpenApi\Attributes\Extensions\Extension;
 use OpenApi\Attributes\Media\Content;
 
 /**
- * The annotation may be used on a method parameter to define it as the Request Body of the operation, and/or to define
+ * The attribute may be used on a method parameter to define it as the Request Body of the operation, and/or to define
  * additional properties for such request body.
- *
- * @see Parameter
- * @see Content
  **/
 #[Attribute(Attribute::TARGET_METHOD | Attribute::TARGET_PARAMETER | Attribute::TARGET_CLASS)]
 class RequestBody

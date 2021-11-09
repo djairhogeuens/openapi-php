@@ -7,9 +7,7 @@ use OpenApi\Attributes\Extensions\Extension;
 use OpenApi\Attributes\Servers\Server;
 
 /**
- * The annotation may be applied in {@see ApiResponse#$links} to add OpenAPI links to a response.
- *
- * @see ApiResponse
+ * The attribute may be applied in {@see \OpenApi\Attributes\Responses\ApiResponse::$links} to add OpenAPI links to a response.
  **/
 #[Attribute(Attribute::TARGET_CLASS)]
 class Link

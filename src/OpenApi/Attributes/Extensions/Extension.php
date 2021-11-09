@@ -13,8 +13,6 @@ class Extension
     /**
      * @param string $name An option name for these extensions.
      * @param ExtensionProperty[] $properties The extension properties.
-     *
-     * @see ExtensionProperty
      */
     public function __construct(
         public string $name = "",

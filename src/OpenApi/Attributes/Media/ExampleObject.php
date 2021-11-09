@@ -6,8 +6,8 @@ use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
 
 /**
- * The annotation may be used to add one or more examples to the definition of a parameter, request or response content,
- * by defining it as field {@see Parameter#$examples} or {@see Content#$examples}
+ * The attribute may be used to add one or more examples to the definition of a parameter, request or response content,
+ * by defining it as field {@see \OpenApi\Attributes\Parameter::$examples} or {@see Content::$examples}
  *
  **/
 #[Attribute(Attribute::TARGET_CLASS)]

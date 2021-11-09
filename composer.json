@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "OpenApi\\Attributes\\": "src\\OpenApi\\Attributes"
+            "OpenApi\\Attributes\\": "src/OpenApi/Attributes"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "OpenApi\\Example\\": "example\\OpenApi\\Example"
+            "OpenApi\\Example\\": "example/OpenApi/Example"
         }
     }
 }

@@ -7,10 +7,8 @@ use OpenApi\Attributes\Extensions\Extension;
 use OpenApi\Attributes\Headers\Header;
 
 /**
- * The annotation may be used to add encoding details to the definition of a parameter, request or response content,
- * by defining it as field {@see Content#$encoding}
- *
- * @see Content
+ * The attribute may be used to add encoding details to the definition of a parameter, request or response content,
+ * by defining it as field {@see Content::$encoding}
  **/
 #[Attribute(0)]
 class Encoding

@@ -6,12 +6,10 @@ use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
 
 /**
- * The annotation may be used at method level or as field of {@see Operation} to add a reference to an external
+ * The attribute may be used at method level or as field of {@see Operation} to add a reference to an external
  * resource for extended documentation of an Operation (OpenAPI specification).
- * It may also be used to add external documentation to {@see Tag},
- * {@see Header} or {@see Schema}, or as field of {@see OpenAPIDefinition}.</p>
- *
- * @see OpenAPIDefinition
+ * It may also be used to add external documentation to {@see Tags\Tag},
+ * {@see Headers\Header} or {@see Media\Schema}, or as field of {@see OpenAPIDefinition}.
  **/
 #[Attribute(Attribute::TARGET_METHOD | Attribute::TARGET_CLASS | Attribute::TARGET_PARAMETER)]
 class ExternalDocumentation

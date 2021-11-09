@@ -7,7 +7,7 @@ use OpenApi\Attributes\Extensions\Extension;
 use OpenApi\Attributes\Operation;
 
 /**
- * The annotation may be used at method level to add one ore more callbacks to the operation definition.
+ * The attribute may be used at method level to add one ore more callbacks to the operation definition.
  **/
 #[Attribute(Attribute::TARGET_PROPERTY | Attribute::TARGET_METHOD | Attribute::TARGET_PARAMETER | Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]
 class Callback

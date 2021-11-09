@@ -6,13 +6,9 @@ use Attribute;
 use OpenApi\Attributes\Media\Schema;
 
 /**
- * The annotation may be used to add one or more headers to the definition of a response or as attribute of content
- * encoding by defining it as field {@see ApiResponse#$headers} or {@see Content#$encoding}.
- * <p>Please note that request headers are defined as Header {@see Parameter}.</p>
- *
- * @see ApiResponse
- * @see Parameter
- * @see Encoding
+ * The attribute may be used to add one or more headers to the definition of a response or as attribute of content
+ * encoding by defining it as field {@see \OpenApi\Attributes\Responses\ApiResponse::$headers} or {@see \OpenApi\Attributes\Media\Content::$encoding}.
+ * Please note that request headers are defined as Header {@see \OpenApi\Attributes\Parameter}.
  **/
 #[Attribute(0)]
 class Header
