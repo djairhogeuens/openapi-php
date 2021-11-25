@@ -26,8 +26,7 @@
         "cs-fix": "php-cs-fixer fix",
         "lint": [
             "@psalm",
-            "@stan",
-            "@cs-check"
+            "@stan"
         ]
     },
     "autoload": {
