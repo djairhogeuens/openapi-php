@@ -12,7 +12,7 @@ use OpenApi\Attributes\Extensions\Extension;
  * {@see Headers\Header} or {@see Media\Schema}, or as field of {@see OpenAPIDefinition}.
  **/
 #[Attribute(Attribute::TARGET_METHOD | Attribute::TARGET_CLASS | Attribute::TARGET_PARAMETER)]
-class ExternalDocumentation
+class ExternalDocumentation implements OpenApiAttributeInterface
 {
     /**
      * @param string $description A short description of the target documentation.

@@ -4,12 +4,13 @@ namespace OpenApi\Attributes\Info;
 
 use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * The attribute may be used in {@see Info::$license} to define a license for the OpenAPI spec.
  **/
 #[Attribute(0)]
-class License
+class License implements OpenApiAttributeInterface
 {
     /**
      * @param string $name The license name used for the API.

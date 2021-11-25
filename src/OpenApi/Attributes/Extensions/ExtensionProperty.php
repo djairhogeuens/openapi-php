@@ -3,12 +3,13 @@
 namespace OpenApi\Attributes\Extensions;
 
 use Attribute;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * A name/value property within a OpenApi extension
  */
 #[Attribute(Attribute::TARGET_CLASS)]
-class ExtensionProperty
+class ExtensionProperty implements OpenApiAttributeInterface
 {
     /**
      * @param string $name The name of the property.

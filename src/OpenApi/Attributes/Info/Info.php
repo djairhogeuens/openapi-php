@@ -4,12 +4,13 @@ namespace OpenApi\Attributes\Info;
 
 use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * The attribute may be used in {@see OpenAPIDefinition::$info} to populate the Info section of the OpenAPI document.
  **/
 #[Attribute(Attribute::TARGET_CLASS)]
-class Info
+class Info implements OpenApiAttributeInterface
 {
     /**
      * @param string $title The title of the application.

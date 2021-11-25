@@ -20,7 +20,7 @@ use OpenApi\Attributes\Media\Schema;
  * For method parameters bound to the request body, see {@see Parameters\RequestBody}
  **/
 #[Attribute(Attribute::TARGET_PARAMETER | Attribute::TARGET_METHOD | Attribute::TARGET_PROPERTY | Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]
-class Parameter
+class Parameter implements OpenApiAttributeInterface
 {
     /**
      * @param string $name The name of the parameter.

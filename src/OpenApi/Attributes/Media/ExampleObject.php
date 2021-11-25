@@ -4,6 +4,7 @@ namespace OpenApi\Attributes\Media;
 
 use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * The attribute may be used to add one or more examples to the definition of a parameter, request or response content,
@@ -11,7 +12,7 @@ use OpenApi\Attributes\Extensions\Extension;
  *
  **/
 #[Attribute(Attribute::TARGET_CLASS)]
-class ExampleObject
+class ExampleObject implements OpenApiAttributeInterface
 {
     /**
      * @param string $name A unique name to identify this particular example

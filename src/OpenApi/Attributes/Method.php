@@ -2,6 +2,6 @@
 
 namespace OpenApi\Attributes;
 
-abstract class Method
+abstract class Method implements OpenApiAttributeInterface
 {
 }

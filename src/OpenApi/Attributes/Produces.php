@@ -5,7 +5,7 @@ namespace OpenApi\Attributes;
 use Attribute;
 
 #[Attribute(Attribute::TARGET_METHOD | Attribute::TARGET_CLASS)]
-class Produces
+class Produces implements OpenApiAttributeInterface
 {
     /**
      * @param string[] $contentTypes The content types that can be produced.

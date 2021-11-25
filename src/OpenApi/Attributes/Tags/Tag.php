@@ -5,6 +5,7 @@ namespace OpenApi\Attributes\Tags;
 use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
 use OpenApi\Attributes\ExternalDocumentation;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * The attribute may be applied at class or method level, or in {@see \OpenApi\Attributes\Operation::$tags} to define tags for the
@@ -15,7 +16,7 @@ use OpenApi\Attributes\ExternalDocumentation;
  * field
  **/
 #[Attribute(Attribute::TARGET_METHOD | Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]
-class Tag
+class Tag implements OpenApiAttributeInterface
 {
     /**
      * @param string $name The name of this tag.

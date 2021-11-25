@@ -3,6 +3,7 @@
 namespace OpenApi\Attributes\Security;
 
 use Attribute;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * The attribute may be applied at class or method level, or in {@see \OpenApi\Attributes\Operation::$security} to define security requirements for the
@@ -10,7 +11,7 @@ use Attribute;
  * It can also be used in {@see \OpenApi\Attributes\OpenAPIDefinition::$security} to define spec level security.
  **/
 #[Attribute(Attribute::TARGET_METHOD | Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]
-class SecurityRequirement
+class SecurityRequirement implements OpenApiAttributeInterface
 {
     /**
      * @param string $name This name must correspond to a declared SecurityRequirement.

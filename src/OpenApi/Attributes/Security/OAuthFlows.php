@@ -4,12 +4,13 @@ namespace OpenApi\Attributes\Security;
 
 use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * Allows configuration of the supported OAuth Flows.
  **/
 #[Attribute(0)]
-class OAuthFlows
+class OAuthFlows implements OpenApiAttributeInterface
 {
     /**
      * @param OAuthFlow|null $implicit Configuration for the OAuth Implicit flow.

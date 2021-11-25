@@ -6,6 +6,7 @@ use Attribute;
 use OpenApi\Attributes\Enums\AccessMode;
 use OpenApi\Attributes\Extensions\Extension;
 use OpenApi\Attributes\ExternalDocumentation;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * The attribute may be used to define a Schema for a set of elements of the OpenAPI spec, and/or to define additional
@@ -16,7 +17,7 @@ use OpenApi\Attributes\ExternalDocumentation;
  * coexist
  **/
 #[Attribute(Attribute::TARGET_PROPERTY | Attribute::TARGET_METHOD | Attribute::TARGET_CLASS)]
-class Schema
+class Schema implements OpenApiAttributeInterface
 {
     /**
      * @param class-string|null $implementation Provides a PHP class as implementation for this schema. When provided, additional information in the Schema attribute (except for type information) will augment the PHP class after introspection.

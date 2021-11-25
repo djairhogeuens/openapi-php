@@ -4,13 +4,14 @@ namespace OpenApi\Attributes\Links;
 
 use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 use OpenApi\Attributes\Servers\Server;
 
 /**
  * The attribute may be applied in {@see \OpenApi\Attributes\Responses\ApiResponse::$links} to add OpenAPI links to a response.
  **/
 #[Attribute(Attribute::TARGET_CLASS)]
-class Link
+class Link implements OpenApiAttributeInterface
 {
     /**
      * @param string $name The name of this link.

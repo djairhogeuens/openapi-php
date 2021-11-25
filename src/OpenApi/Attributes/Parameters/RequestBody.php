@@ -5,13 +5,14 @@ namespace OpenApi\Attributes\Parameters;
 use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
 use OpenApi\Attributes\Media\Content;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * The attribute may be used on a method parameter to define it as the Request Body of the operation, and/or to define
  * additional properties for such request body.
  **/
 #[Attribute(Attribute::TARGET_METHOD | Attribute::TARGET_PARAMETER | Attribute::TARGET_CLASS)]
-class RequestBody
+class RequestBody implements OpenApiAttributeInterface
 {
     /**
      * @param string $description A brief description of the request body.

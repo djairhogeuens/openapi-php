@@ -5,13 +5,14 @@ namespace OpenApi\Attributes\Security;
 use Attribute;
 use OpenApi\Attributes\Enums\SecuritySchemeIn;
 use OpenApi\Attributes\Enums\SecuritySchemeType;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * The attribute may be used at class level (also on multiple classes) to add securitySchemes to spec
  * components section.
  **/
 #[Attribute(Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]
-class SecurityScheme
+class SecurityScheme implements OpenApiAttributeInterface
 {
     /**
      * @param string $type The type of the security scheme. Valid values are "apiKey", "http", "oauth2", "openIdConnect".

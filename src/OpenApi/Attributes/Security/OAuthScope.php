@@ -3,12 +3,13 @@
 namespace OpenApi\Attributes\Security;
 
 use Attribute;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * Represents an OAuth scope.
  **/
 #[Attribute(0)]
-class OAuthScope
+class OAuthScope implements OpenApiAttributeInterface
 {
     /**
      * @param string $name Name of the scope.

@@ -4,12 +4,13 @@ namespace OpenApi\Attributes\Security;
 
 use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * Configuration details for a supported OAuth Flow.
  **/
 #[Attribute(0)]
-class OAuthFlow
+class OAuthFlow implements OpenApiAttributeInterface
 {
     /**
      * @param string $authorizationUrl The authorization URL to be used for this flow. This must be in the form of a URL. Applies to oauth2 ("implicit", "authorizationCode") type.

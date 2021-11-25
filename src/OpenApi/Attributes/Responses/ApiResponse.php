@@ -7,13 +7,14 @@ use OpenApi\Attributes\Extensions\Extension;
 use OpenApi\Attributes\Headers\Header;
 use OpenApi\Attributes\Links\Link;
 use OpenApi\Attributes\Media\Content;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * The attribute may be used at method level or as field of {@see \OpenApi\Attributes\Operation} to define one or more responses of the
  * Operation.
  **/
 #[Attribute(Attribute::TARGET_METHOD | Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]
-class ApiResponse
+class ApiResponse implements OpenApiAttributeInterface
 {
     /**
      * @param string $description A short description of the response.

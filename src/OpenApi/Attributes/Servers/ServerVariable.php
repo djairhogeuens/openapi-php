@@ -4,12 +4,13 @@ namespace OpenApi\Attributes\Servers;
 
 use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * An object representing a Server Variable for server URL template substitution.
  **/
 #[Attribute(0)]
-class ServerVariable
+class ServerVariable implements OpenApiAttributeInterface
 {
     /**
      * @param string $name Required. The name of this variable.

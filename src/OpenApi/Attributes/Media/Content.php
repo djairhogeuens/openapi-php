@@ -4,13 +4,14 @@ namespace OpenApi\Attributes\Media;
 
 use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * The attribute may be used to define the content/media type  of a parameter, request or response, by defining it as
  * field {@see \OpenApi\Attributes\Parameter::$content}, {@see \OpenApi\Attributes\Parameters\RequestBody::$content} or {@see \OpenApi\Attributes\Responses\ApiResponse::$content}.
  **/
 #[Attribute(Attribute::TARGET_CLASS)]
-class Content
+class Content implements OpenApiAttributeInterface
 {
     /**
      * @param string $mediaType The media type that this object applies to.

@@ -5,13 +5,14 @@ namespace OpenApi\Attributes\Media;
 use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
 use OpenApi\Attributes\Headers\Header;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * The attribute may be used to add encoding details to the definition of a parameter, request or response content,
  * by defining it as field {@see Content::$encoding}
  **/
 #[Attribute(0)]
-class Encoding
+class Encoding implements OpenApiAttributeInterface
 {
     /**
      * @param string $name The name of this encoding object instance.

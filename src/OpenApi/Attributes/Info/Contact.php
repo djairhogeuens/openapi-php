@@ -4,12 +4,13 @@ namespace OpenApi\Attributes\Info;
 
 use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * The attribute may be used in {@see Info::$contact} to define a contact for the OpenAPI spec.
  **/
 #[Attribute(0)]
-class Contact
+class Contact implements OpenApiAttributeInterface
 {
     /**
      * @param string $name The identifying name of the contact person/organization.

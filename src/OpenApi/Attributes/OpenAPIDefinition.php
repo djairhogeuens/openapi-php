@@ -14,7 +14,7 @@ use OpenApi\Attributes\Tags\Tag;
  * If more than one class is annotated with {@see OpenAPIDefinition}, with the same fields defined, behaviour is inconsistent.
  */
 #[Attribute(Attribute::TARGET_CLASS)]
-class OpenAPIDefinition
+class OpenAPIDefinition implements OpenApiAttributeInterface
 {
     /**
      * @param Info|null $info Provides metadata about the API. The metadata MAY be used by tooling as required.

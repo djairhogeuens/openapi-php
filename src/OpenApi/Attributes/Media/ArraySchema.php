@@ -4,6 +4,7 @@ namespace OpenApi\Attributes\Media;
 
 use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * The attribute may be used to define a schema of type "array" for a set of elements of the OpenAPI spec, and/or to define additional
@@ -12,7 +13,7 @@ use OpenApi\Attributes\Extensions\Extension;
  * coexist.
  **/
 #[Attribute(Attribute::TARGET_PROPERTY | Attribute::TARGET_METHOD | Attribute::TARGET_PARAMETER | Attribute::TARGET_CLASS)]
-class ArraySchema
+class ArraySchema implements OpenApiAttributeInterface
 {
     /**
      * @param Schema|null $schema The schema of the items in the array.

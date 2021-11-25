@@ -28,7 +28,7 @@ use OpenApi\Attributes\Tags\Tag;
  * </ul>
  **/
 #[Attribute(Attribute::TARGET_METHOD | Attribute::TARGET_CLASS)]
-class Operation
+class Operation implements OpenApiAttributeInterface
 {
     /**
      * @param string|null $method The HTTP method for this operation.

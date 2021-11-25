@@ -3,6 +3,7 @@
 namespace OpenApi\Attributes\Media;
 
 use Attribute;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * The attribute may be used in {@see Schema::$discriminatorMapping} to define an optional mapping definition
@@ -12,7 +13,7 @@ use Attribute;
  * Use {@see Schema::$discriminatorProperty} to define a discriminator property.
  **/
 #[Attribute(0)]
-class DiscriminatorMapping
+class DiscriminatorMapping implements OpenApiAttributeInterface
 {
     /**
      * @param string $value The property value that will be mapped to a Schema.

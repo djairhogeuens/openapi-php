@@ -4,6 +4,7 @@ namespace OpenApi\Attributes\Headers;
 
 use Attribute;
 use OpenApi\Attributes\Media\Schema;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 
 /**
  * The attribute may be used to add one or more headers to the definition of a response or as attribute of content
@@ -11,7 +12,7 @@ use OpenApi\Attributes\Media\Schema;
  * Please note that request headers are defined as Header {@see \OpenApi\Attributes\Parameter}.
  **/
 #[Attribute(0)]
-class Header
+class Header implements OpenApiAttributeInterface
 {
     /**
      * @param string $name Required: The name of the header. The name is only used as the key to store this header in a map.

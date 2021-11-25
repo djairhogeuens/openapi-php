@@ -4,13 +4,14 @@ namespace OpenApi\Attributes\Callbacks;
 
 use Attribute;
 use OpenApi\Attributes\Extensions\Extension;
+use OpenApi\Attributes\OpenApiAttributeInterface;
 use OpenApi\Attributes\Operation;
 
 /**
  * The attribute may be used at method level to add one ore more callbacks to the operation definition.
  **/
 #[Attribute(Attribute::TARGET_PROPERTY | Attribute::TARGET_METHOD | Attribute::TARGET_PARAMETER | Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]
-class Callback
+class Callback implements OpenApiAttributeInterface
 {
     /**
      * @param string $name The friendly name used to refer to this callback.
