@@ -4,7 +4,7 @@
 
 This is an implementation of the OpenAPI specification using PHP attributes.
 
-Currently, this implementation is compatible with OpenAPI 3.0.2 and requires PHP >= 8.0.
+Currently, this implementation is compatible with OpenAPI 3.0.2 and requires PHP >= 8.1.
 
 ## Usage
 
