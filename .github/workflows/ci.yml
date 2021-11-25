@@ -10,10 +10,10 @@ jobs:
     - uses: actions/checkout@v2
     - uses: php-actions/composer@v6
       with:
-        php_version: 8.1
+        php_version: 8.1-rc
         command: install
     - uses: php-actions/composer@v6
       with:
-        php_version: 8.1
+        php_version: 8.1-rc
         command: run-script
         args: lint
