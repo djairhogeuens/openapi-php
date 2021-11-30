@@ -1,10 +1,11 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace OpenApi\Example;
 
 use OpenApi\Attributes\Delete;
 use OpenApi\Attributes\Enums\Explode;
 use OpenApi\Attributes\Enums\ParameterIn;
+use OpenApi\Attributes\Enums\SecuritySchemeIn;
 use OpenApi\Attributes\Enums\SecuritySchemeType;
 use OpenApi\Attributes\ExternalDocumentation;
 use OpenApi\Attributes\Get;
@@ -81,7 +82,7 @@ use OpenApi\Attributes\Tags\Tag;
 #[SecurityScheme(
     type: SecuritySchemeType::APIKEY,
     name: "api_key",
-    in: "header"
+    in: SecuritySchemeIn::HEADER
 )]
 interface PetstoreApi
 {

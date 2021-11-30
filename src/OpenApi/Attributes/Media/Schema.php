@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace OpenApi\Attributes\Media;
 
@@ -43,7 +43,7 @@ class Schema implements OpenApiAttributeInterface
      * @param string $format Provides an optional override for the format. If a consumer is unaware of the meaning of the format, they shall fall back to using the basic type without format.  For example, if \&quot;type: integer, format: int128\&quot; were used to designate a very large integer, most consumers will not understand how to handle it, and fall back to simply \&quot;type: integer\&quot;
      * @param string $ref References a schema definition in an external OpenAPI document.
      * @param bool $nullable If true, designates a value as possibly null.
-     * @param string $accessMode Allows to specify the access mode (AccessMode.READ_ONLY, READ_WRITE)
+     * @param AccessMode $accessMode Allows to specify the access mode (READ_ONLY, WRITE_ONLY, READ_WRITE)
      * AccessMode::READ_ONLY: value will not be written to during a request but may be returned during a response.
      * AccessMode::WRITE_ONLY: value will only be written to during a request but not returned during a response.
      * AccessMode::READ_WRITE: value will be written to during a request and returned during a response.
@@ -84,7 +84,7 @@ class Schema implements OpenApiAttributeInterface
         public string $format = "",
         public string $ref = "",
         public bool $nullable = false,
-        public string $accessMode = AccessMode::AUTO,
+        public AccessMode $accessMode = AccessMode::AUTO,
         public string $example = "",
         public ?ExternalDocumentation $externalDocs = null,
         public bool $deprecated = false,

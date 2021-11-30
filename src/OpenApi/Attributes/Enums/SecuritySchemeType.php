@@ -1,12 +1,12 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace OpenApi\Attributes\Enums;
 
-class SecuritySchemeType
+enum SecuritySchemeType: string
 {
-    public const DEFAULT = "";
-    public const APIKEY = "apiKey";
-    public const HTTP = "http";
-    public const OPENIDCONNECT = "openIdConnect";
-    public const OAUTH2 = "oauth2";
+    case NONE = "";
+    case APIKEY = "apiKey";
+    case HTTP = "http";
+    case OPENIDCONNECT = "openIdConnect";
+    case OAUTH2 = "oauth2";
 }

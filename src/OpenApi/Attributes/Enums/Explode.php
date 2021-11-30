@@ -1,10 +1,10 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace OpenApi\Attributes\Enums;
 
-class Explode
+enum Explode: string
 {
-    public const DEFAULT = "DEFAULT";
-    public const FALSE = "FALSE";
-    public const TRUE = "TRUE";
+    case NONE = "";
+    case FALSE = "FALSE";
+    case TRUE = "TRUE";
 }
