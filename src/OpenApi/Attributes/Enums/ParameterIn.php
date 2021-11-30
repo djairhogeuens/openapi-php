@@ -4,7 +4,6 @@ namespace OpenApi\Attributes\Enums;
 
 class ParameterIn
 {
-    public const DEFAULT = "";
     public const HEADER = "header";
     public const QUERY = "query";
     public const PATH = "path";
