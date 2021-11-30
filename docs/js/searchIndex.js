@@ -81,35 +81,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/OpenApi-Attributes-Enums-AccessMode.html#constant_READ_WRITE"
         },                {
-            "fqsen": "\\OpenApi\\Attributes\\Enums\\Explode",
-            "name": "Explode",
-            "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-Explode.html"
-        },                {
-            "fqsen": "\\OpenApi\\Attributes\\Enums\\Explode\u003A\u003ADEFAULT",
-            "name": "DEFAULT",
-            "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-Explode.html#constant_DEFAULT"
-        },                {
-            "fqsen": "\\OpenApi\\Attributes\\Enums\\Explode\u003A\u003AFALSE",
-            "name": "FALSE",
-            "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-Explode.html#constant_FALSE"
-        },                {
-            "fqsen": "\\OpenApi\\Attributes\\Enums\\Explode\u003A\u003ATRUE",
-            "name": "TRUE",
-            "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-Explode.html#constant_TRUE"
-        },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterIn",
             "name": "ParameterIn",
             "summary": "",
             "url": "classes/OpenApi-Attributes-Enums-ParameterIn.html"
-        },                {
-            "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterIn\u003A\u003ADEFAULT",
-            "name": "DEFAULT",
-            "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-ParameterIn.html#constant_DEFAULT"
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterIn\u003A\u003AHEADER",
             "name": "HEADER",
@@ -135,11 +110,6 @@ Search.appendIndex(
             "name": "ParameterStyle",
             "summary": "",
             "url": "classes/OpenApi-Attributes-Enums-ParameterStyle.html"
-        },                {
-            "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterStyle\u003A\u003ADEFAULT",
-            "name": "DEFAULT",
-            "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-ParameterStyle.html#constant_DEFAULT"
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterStyle\u003A\u003AMATRIX",
             "name": "MATRIX",
@@ -181,11 +151,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/OpenApi-Attributes-Enums-SecuritySchemeIn.html"
         },                {
-            "fqsen": "\\OpenApi\\Attributes\\Enums\\SecuritySchemeIn\u003A\u003ADEFAULT",
-            "name": "DEFAULT",
-            "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-SecuritySchemeIn.html#constant_DEFAULT"
-        },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\SecuritySchemeIn\u003A\u003AHEADER",
             "name": "HEADER",
             "summary": "",
@@ -205,11 +170,6 @@ Search.appendIndex(
             "name": "SecuritySchemeType",
             "summary": "",
             "url": "classes/OpenApi-Attributes-Enums-SecuritySchemeType.html"
-        },                {
-            "fqsen": "\\OpenApi\\Attributes\\Enums\\SecuritySchemeType\u003A\u003ADEFAULT",
-            "name": "DEFAULT",
-            "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-SecuritySchemeType.html#constant_DEFAULT"
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\SecuritySchemeType\u003A\u003AAPIKEY",
             "name": "APIKEY",
@@ -910,6 +870,11 @@ Search.appendIndex(
             "name": "Method",
             "summary": "",
             "url": "classes/OpenApi-Attributes-Method.html"
+        },                {
+            "fqsen": "\\OpenApi\\Attributes\\OpenApiAttributeInterface",
+            "name": "OpenApiAttributeInterface",
+            "summary": "",
+            "url": "classes/OpenApi-Attributes-OpenApiAttributeInterface.html"
         },                {
             "fqsen": "\\OpenApi\\Attributes\\OpenAPIDefinition",
             "name": "OpenAPIDefinition",
