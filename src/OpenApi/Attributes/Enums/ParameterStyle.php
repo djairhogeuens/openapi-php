@@ -4,7 +4,6 @@ namespace OpenApi\Attributes\Enums;
 
 enum ParameterStyle: string
 {
-    case NONE = "";
     case MATRIX = "matrix";
     case LABEL = "label";
     case FORM = "form";

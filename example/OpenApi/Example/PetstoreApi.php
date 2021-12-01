@@ -3,7 +3,6 @@
 namespace OpenApi\Example;
 
 use OpenApi\Attributes\Delete;
-use OpenApi\Attributes\Enums\Explode;
 use OpenApi\Attributes\Enums\ParameterIn;
 use OpenApi\Attributes\Enums\SecuritySchemeIn;
 use OpenApi\Attributes\Enums\SecuritySchemeType;
@@ -135,7 +134,7 @@ interface PetstoreApi
     #[ResponseBody(description: "Invalid tag value", responseCode: "400")]
     #[SecurityRequirement(name: "petstore_auth", scopes: ["write:pets", "read:pets"])]
     public function findPetsByTags(
-        #[Parameter(in: ParameterIn::QUERY, description: "Tags to filter by", required: false, explode: Explode::TRUE)]
+        #[Parameter(in: ParameterIn::QUERY, description: "Tags to filter by", required: false, explode: true)]
         array $tags
     ): array;
 

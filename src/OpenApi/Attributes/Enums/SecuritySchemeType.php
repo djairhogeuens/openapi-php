@@ -4,7 +4,6 @@ namespace OpenApi\Attributes\Enums;
 
 enum SecuritySchemeType: string
 {
-    case NONE = "";
     case APIKEY = "apiKey";
     case HTTP = "http";
     case OPENIDCONNECT = "openIdConnect";
