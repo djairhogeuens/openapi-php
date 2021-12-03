@@ -4,7 +4,6 @@ namespace OpenApi\Attributes\Enums;
 
 class ParameterStyle
 {
-    public const DEFAULT = "";
     public const MATRIX = "matrix";
     public const LABEL = "label";
     public const FORM = "form";
