@@ -2,6 +2,7 @@
 
 namespace OpenApi\Example;
 
+use OpenApi\Attributes\Media\ArraySchema;
 use OpenApi\Attributes\Media\Schema;
 
 class Customer
@@ -15,5 +16,6 @@ class Customer
     /**
      * @var null|Address[]
      */
+    #[ArraySchema(schema: new Schema(implementation: Address::class))]
     public ?array $addresses;
 }

@@ -89,10 +89,27 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/openapi.html">OpenApi</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/openapi-attributes.html">Attributes</a></li>
     </ul>
 
-    <article class="phpdocumentor-element -file">
-        <h2 class="phpdocumentor-content__title">DiscriminatorMapping.php</h2>
+    <article class="phpdocumentor-element -interface">
+        <h2 class="phpdocumentor-content__title">
+    OpenApiAttributeInterface
+                <div class="phpdocumentor-element__package">
+            in
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li><a href="packages/Application.html">Application</a></li>
+                            </ul>
+        </div>
+    </h2>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/OpenApi/Attributes/OpenApiAttributeInterface.php"><a href="files/src-openapi-attributes-openapiattributeinterface.html"><abbr title="src/OpenApi/Attributes/OpenApiAttributeInterface.php">OpenApiAttributeInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">5</span>
+
+    </aside>
 
         
     <section class="phpdocumentor-description"></section>
@@ -102,20 +119,6 @@
 
 
 
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-    
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/OpenApi-Attributes-Media-DiscriminatorMapping.html"><abbr title="\OpenApi\Attributes\Media\DiscriminatorMapping">DiscriminatorMapping</abbr></a></dt>
-        <dd>The attribute may be used in {@see Schema::$discriminatorMapping} to define an optional mapping definition
-in scenarios involving composition / inheritance where the value of the discriminator field does not match the schema
-name or implicit mapping is not possible.</dd>
-    
-    
-    </dl>
 
 
 
@@ -124,6 +127,68 @@ name or implicit mapping is not possible.</dd>
         
 
         
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
+
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
@@ -138,7 +203,7 @@ name or implicit mapping is not possible.</dd>
 </section>
             </div>
         </div>
-        <a href="files/src-openapi-attributes-media-discriminatormapping.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/OpenApi-Attributes-OpenApiAttributeInterface.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

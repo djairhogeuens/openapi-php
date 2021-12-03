@@ -2,6 +2,7 @@
 
 namespace OpenApi\Example;
 
+use OpenApi\Attributes\Media\ArraySchema;
 use OpenApi\Attributes\Media\Schema;
 
 class Pet
@@ -21,10 +22,11 @@ class Pet
     public array $photoUrls;
 
     /**
-     * @var Tag[]
+     * @var null|Tag[]
      */
+    #[ArraySchema(schema: new Schema(implementation: Tag::class))]
     public ?array $tags;
 
-    #[Schema(description: "pet status in the store", oneOf: ["available", "pending", "sold"])]
+    #[Schema(description: "pet status in the store", allowableValues: ["available", "pending", "sold"])]
     public ?string $status;
 }

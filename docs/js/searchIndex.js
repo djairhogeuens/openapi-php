@@ -911,6 +911,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/OpenApi-Attributes-Method.html"
         },                {
+            "fqsen": "\\OpenApi\\Attributes\\OpenApiAttributeInterface",
+            "name": "OpenApiAttributeInterface",
+            "summary": "",
+            "url": "classes/OpenApi-Attributes-OpenApiAttributeInterface.html"
+        },                {
             "fqsen": "\\OpenApi\\Attributes\\OpenAPIDefinition",
             "name": "OpenAPIDefinition",
             "summary": "The\u0020attribute\u0020that\u0020may\u0020be\u0020used\u0020to\u0020populate\u0020OpenAPI\u0020Object\u0020fields\u0020info,\u0020tags,\u0020servers,\u0020security\u0020and\u0020externalDocs.",

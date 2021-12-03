@@ -18,7 +18,7 @@ class Order
 
     public ?DateTime $shipDate;
 
-    #[Schema(description: "Order Status", example: "approved", oneOf: ["placed", "approved", "delivered"])]
+    #[Schema(description: "Order Status", example: "approved", allowableValues: ["placed", "approved", "delivered"])]
     public ?string $status;
 
     public ?bool $complete;

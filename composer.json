@@ -27,7 +27,8 @@
         "lint": [
             "@psalm",
             "@stan"
-        ]
+        ],
+        "generate-docs": "docker run --rm -v $(pwd):/data phpdoc/phpdoc:latest -d ./src -t ./docs  --setting=graphs.enabled=true"
     },
     "autoload": {
         "psr-4": {
