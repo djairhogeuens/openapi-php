@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace OpenApi\Attributes\Enums;
 
-class SecuritySchemeIn
+enum SecuritySchemeIn: string
 {
-    public const HEADER = "header";
-    public const QUERY = "query";
-    public const COOKIE = "cookie";
+    case HEADER = "header";
+    case QUERY = "query";
+    case COOKIE = "cookie";
 }

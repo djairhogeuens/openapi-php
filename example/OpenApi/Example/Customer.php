@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace OpenApi\Example;
 
 use OpenApi\Attributes\Media\ArraySchema;

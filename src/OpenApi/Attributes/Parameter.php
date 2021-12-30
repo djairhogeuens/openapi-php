@@ -1,8 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace OpenApi\Attributes;
 
 use Attribute;
+use OpenApi\Attributes\Enums\ParameterIn;
+use OpenApi\Attributes\Enums\ParameterStyle;
 use OpenApi\Attributes\Extensions\Extension;
 use OpenApi\Attributes\Media\ArraySchema;
 use OpenApi\Attributes\Media\Content;
@@ -21,12 +25,12 @@ class Parameter implements OpenApiAttributeInterface
 {
     /**
      * @param string $name The name of the parameter.
-     * @param string|null $in The location of the parameter. Possible values are "query", "header", "path" or "cookie". Ignored when null.
+     * @param ParameterIn|null $in The location of the parameter. Possible values are "query", "header", "path" or "cookie". Ignored when empty string.
      * @param string $description Additional description data to provide on the purpose of the parameter
      * @param bool $required Determines whether this parameter is mandatory. If the parameter location is "path", this property is required and its value must be true. Otherwise, the property may be included and its default value is false.
      * @param bool $deprecated Specifies that a parameter is deprecated and should be transitioned out of usage.
      * @param bool $allowEmptyValue When true, allows sending an empty value. If false, the parameter will be considered \&quot;null\&quot; if no value is present.  This may create validation errors when the parameter is required.
-     * @param string|null $style Describes how the parameter value will be serialized depending on the type of the parameter value. Default values (based on value of in): for query - form; for path - simple; for header - simple; for cookie - form. Ignored if the properties content or array are specified.
+     * @param ParameterStyle|null $style Describes how the parameter value will be serialized depending on the type of the parameter value. Default values (based on value of in): for query - form; for path - simple; for header - simple; for cookie - form. Ignored if the properties content or array are specified.
      * @param bool|null $explode When this is true, parameter values of type array or object generate separate parameters for each value of the array or key-value pair of the map. For other types of parameters this property has no effect. When style is form, the default value is true. For all other styles, the default value is false. Ignored if the properties content or array are specified.
      * @param bool $allowReserved Determines whether the parameter value should allow reserved characters, as defined by RFC3986. This property only applies to parameters with an in value of query. The default value is false. Ignored if the properties content or array are specified.
      * @param Schema|null $schema The schema defining the type used for the parameter. Ignored if the properties content or array are specified.
@@ -40,12 +44,12 @@ class Parameter implements OpenApiAttributeInterface
      */
     public function __construct(
         public string $name = "",
-        public ?string $in = null,
+        public ?ParameterIn $in = null,
         public string $description = "",
         public bool $required = false,
         public bool $deprecated = false,
         public bool $allowEmptyValue = false,
-        public ?string $style = null,
+        public ?ParameterStyle $style = null,
         public ?bool $explode = null,
         public bool $allowReserved = false,
         public ?Schema $schema = null,

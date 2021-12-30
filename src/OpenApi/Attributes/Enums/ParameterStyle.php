@@ -1,14 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
 namespace OpenApi\Attributes\Enums;
 
-class ParameterStyle
+enum ParameterStyle: string
 {
-    public const MATRIX = "matrix";
-    public const LABEL = "label";
-    public const FORM = "form";
-    public const SPACEDELIMITED = "spaceDelimited";
-    public const PIPEDELIMITED = "pipeDelimited";
-    public const DEEPOBJECT = "deepObject";
-    public const SIMPLE = "simple";
+    case MATRIX = "matrix";
+    case LABEL = "label";
+    case FORM = "form";
+    case SPACEDELIMITED = "spaceDelimited";
+    case PIPEDELIMITED = "pipeDelimited";
+    case DEEPOBJECT = "deepObject";
+    case SIMPLE = "simple";
 }

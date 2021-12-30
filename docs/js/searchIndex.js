@@ -64,22 +64,22 @@ Search.appendIndex(
             "fqsen": "\\OpenApi\\Attributes\\Enums\\AccessMode\u003A\u003AAUTO",
             "name": "AUTO",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-AccessMode.html#constant_AUTO"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\AccessMode\u003A\u003AREAD_ONLY",
             "name": "READ_ONLY",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-AccessMode.html#constant_READ_ONLY"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\AccessMode\u003A\u003AWRITE_ONLY",
             "name": "WRITE_ONLY",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-AccessMode.html#constant_WRITE_ONLY"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\AccessMode\u003A\u003AREAD_WRITE",
             "name": "READ_WRITE",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-AccessMode.html#constant_READ_WRITE"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterIn",
             "name": "ParameterIn",
@@ -89,22 +89,22 @@ Search.appendIndex(
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterIn\u003A\u003AHEADER",
             "name": "HEADER",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-ParameterIn.html#constant_HEADER"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterIn\u003A\u003AQUERY",
             "name": "QUERY",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-ParameterIn.html#constant_QUERY"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterIn\u003A\u003APATH",
             "name": "PATH",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-ParameterIn.html#constant_PATH"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterIn\u003A\u003ACOOKIE",
             "name": "COOKIE",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-ParameterIn.html#constant_COOKIE"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterStyle",
             "name": "ParameterStyle",
@@ -114,37 +114,37 @@ Search.appendIndex(
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterStyle\u003A\u003AMATRIX",
             "name": "MATRIX",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-ParameterStyle.html#constant_MATRIX"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterStyle\u003A\u003ALABEL",
             "name": "LABEL",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-ParameterStyle.html#constant_LABEL"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterStyle\u003A\u003AFORM",
             "name": "FORM",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-ParameterStyle.html#constant_FORM"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterStyle\u003A\u003ASPACEDELIMITED",
             "name": "SPACEDELIMITED",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-ParameterStyle.html#constant_SPACEDELIMITED"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterStyle\u003A\u003APIPEDELIMITED",
             "name": "PIPEDELIMITED",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-ParameterStyle.html#constant_PIPEDELIMITED"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterStyle\u003A\u003ADEEPOBJECT",
             "name": "DEEPOBJECT",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-ParameterStyle.html#constant_DEEPOBJECT"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\ParameterStyle\u003A\u003ASIMPLE",
             "name": "SIMPLE",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-ParameterStyle.html#constant_SIMPLE"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\SecuritySchemeIn",
             "name": "SecuritySchemeIn",
@@ -154,17 +154,17 @@ Search.appendIndex(
             "fqsen": "\\OpenApi\\Attributes\\Enums\\SecuritySchemeIn\u003A\u003AHEADER",
             "name": "HEADER",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-SecuritySchemeIn.html#constant_HEADER"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\SecuritySchemeIn\u003A\u003AQUERY",
             "name": "QUERY",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-SecuritySchemeIn.html#constant_QUERY"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\SecuritySchemeIn\u003A\u003ACOOKIE",
             "name": "COOKIE",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-SecuritySchemeIn.html#constant_COOKIE"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\SecuritySchemeType",
             "name": "SecuritySchemeType",
@@ -174,22 +174,22 @@ Search.appendIndex(
             "fqsen": "\\OpenApi\\Attributes\\Enums\\SecuritySchemeType\u003A\u003AAPIKEY",
             "name": "APIKEY",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-SecuritySchemeType.html#constant_APIKEY"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\SecuritySchemeType\u003A\u003AHTTP",
             "name": "HTTP",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-SecuritySchemeType.html#constant_HTTP"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\SecuritySchemeType\u003A\u003AOPENIDCONNECT",
             "name": "OPENIDCONNECT",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-SecuritySchemeType.html#constant_OPENIDCONNECT"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Enums\\SecuritySchemeType\u003A\u003AOAUTH2",
             "name": "OAUTH2",
             "summary": "",
-            "url": "classes/OpenApi-Attributes-Enums-SecuritySchemeType.html#constant_OAUTH2"
+            "url": ""
         },                {
             "fqsen": "\\OpenApi\\Attributes\\Extensions\\Extension",
             "name": "Extension",

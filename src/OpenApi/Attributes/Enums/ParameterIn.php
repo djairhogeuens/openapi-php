@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace OpenApi\Attributes\Enums;
 
-class ParameterIn
+enum ParameterIn: string
 {
-    public const HEADER = "header";
-    public const QUERY = "query";
-    public const PATH = "path";
-    public const COOKIE = "cookie";
+    case HEADER = "header";
+    case QUERY = "query";
+    case PATH = "path";
+    case COOKIE = "cookie";
 }

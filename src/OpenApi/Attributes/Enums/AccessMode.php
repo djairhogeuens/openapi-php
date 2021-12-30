@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace OpenApi\Attributes\Enums;
 
-class AccessMode
+enum AccessMode: string
 {
-    public const AUTO = "AUTO";
-    public const READ_ONLY = "READ_ONLY";
-    public const WRITE_ONLY = "WRITE_ONLY";
-    public const READ_WRITE = "READ_WRITE";
+    case AUTO = "AUTO";
+    case READ_ONLY = "READ_ONLY";
+    case WRITE_ONLY = "WRITE_ONLY";
+    case READ_WRITE = "READ_WRITE";
 }
