@@ -1,5 +1,7 @@
 # OpenAPI for PHP
 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/djairhogeuens/openapi-php/CI) ![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/djairhogeuens/openapi-php) ![GitHub](https://img.shields.io/github/license/djairhogeuens/openapi-php)
+
 ## Description
 
 This is an implementation of the OpenAPI specification using PHP attributes.
